@@ -19,22 +19,26 @@ app.get('/', function (req, res) {
 
 app.get('/api/token/:token_id', function (req, res) {
   const tokenId = parseInt(req.params.token_id).toString();
-  const fakeDate = faker.date.between(
-    '2020-01-01T00:00:00.000Z',
-    '2021-01-01T00:00:00.000Z'
-  );
-  const day = fakeDate.getDate();
-  const month = fakeDate.getMonth() + 1;
+  // const fakeDate = faker.date.between(
+  //   '2020-01-01T00:00:00.000Z',
+  //   '2021-01-01T00:00:00.000Z'
+  // );
+  // const day = fakeDate.getDate();
+  const day = 20;
+  // const month = fakeDate.getMonth() + 1;
+  const month = 8;
   const data = {
     name: faker.name.findName(),
-    description: faker.commerce.productDescription(),
+    // description: faker.commerce.productDescription(),
+    description:
+      'The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J',
     attributes: {
-      birthday: `${day} ${fakeDate.toLocaleString('default', {
-        month: 'long',
-      })}`,
+      // birthday: `${day} ${fakeDate.toLocaleString('default', { month: 'long', })}`,
+      birthday: `${day} ${monthName(month)}`,
       'birth month': monthName(month),
       'zodiac sign': zodiac(day, month),
-      'favorite music genre': faker.music.genre(),
+      // 'favorite music genre': faker.music.genre(),
+      'favorite music genre': 'Jazz',
     },
     image: `https://placeimg.com/512/512/nightlife`,
   };
