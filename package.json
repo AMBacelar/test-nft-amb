@@ -1,0 +1,25 @@
+{
+  "name": "metadata-api-nodejs",
+  "version": "1.0.0",
+  "description": "test metadata API for NFT collection",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "author": "Adilson Bacelar <a.m.bacelar@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "engines": {
+    "node": "8.11.2"
+  }
+}

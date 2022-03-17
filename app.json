@@ -1,0 +1,15 @@
+{
+  "name": "Metadata Test API for NFTs",
+  "description": "Test metadata API for NFT collection",
+  "repository": "https://github.com/ProjectOpenSea/metadata-api-nodejs",
+  "logo": "https://amb-nft-test.s3.eu-west-2.amazonaws.com/grunkle-beautiful.jpeg",
+  "keywords": [
+    "nft",
+    "crypto",
+    "opensea",
+    "erc721",
+    "node",
+    "express",
+    "static"
+  ]
+}
