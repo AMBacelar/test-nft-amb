@@ -1,6 +1,6 @@
-import express from 'express';
-import path from 'path';
-import { faker } from '@faker-js/faker';
+const express = require('express');
+const path = require('path');
+const { faker } = require('@faker-js/faker');
 
 const PORT = process.env.PORT || 5000;
 const HOST = 'https://mysterious-hamlet-89897.herokuapp.com';
